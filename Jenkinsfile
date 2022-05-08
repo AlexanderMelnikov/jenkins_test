@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker build -t calc_image'
+                sh 'docker build -t calc_image .'
             }
         }
         stage ('test') {
