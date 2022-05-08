@@ -11,7 +11,7 @@ pipeline {
         }
         stage ('test') {
             steps {
-                sh 'docker run calc_image python app/test.py'
+                sh 'docker run calc_image python /app/test.py 1 2'
             }
         }
     }
