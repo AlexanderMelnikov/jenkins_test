@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker build -t calc_image .'
+                sh 'docker pull python:3.9'
             }
         }
         stage ('test') {
             steps {
-                sh 'docker run calc_image python /app/test.py 1 2'
+                sh 'docker run --rm -v ./app:/app python /app/test.py 1 2'
             }
         }
     }
