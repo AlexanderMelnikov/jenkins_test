@@ -1,3 +1,5 @@
+#!/bin/bash
+
 from unittest.mock import patch
 from main import parse_args
 import unittest
