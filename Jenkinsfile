@@ -11,7 +11,7 @@ pipeline {
         }
         stage ('test') {
             steps {
-                sh 'docker run --rm -v $(pwd)/app:/app python /app/test.py 1 2'
+                sh 'docker run --rm -v $(pwd)/app:/app python /app/test.py'
             }
         }
     }
