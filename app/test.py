@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/python
 
 from unittest.mock import patch
 from main import parse_args
