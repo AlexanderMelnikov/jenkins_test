@@ -9,7 +9,7 @@ class TestUtils(unittest.TestCase):
 
     def test_parser(self):
         parser = parse_args(['1', '2'])
-        self.assertEqual(parser, 3)
+        self.assertEqual(parser, 5)
 
 
 if __name__ == '__main__':
